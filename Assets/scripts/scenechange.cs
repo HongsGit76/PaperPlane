@@ -34,11 +34,15 @@ public class scenechange : MonoBehaviour
     }
     public void ChargeSecondscene_level_select()
     {
-        SceneManager.LoadScene("Level Selcet");
+        SceneManager.LoadScene("Level Select");
     }
     public void ChargeSecondscene_main_menu()
     {
         SceneManager.LoadScene("Main Menu");
+    }
+    public void ChargeSecondscene_diary()
+    {
+        SceneManager.LoadScene("Diary");
     }
 
 }

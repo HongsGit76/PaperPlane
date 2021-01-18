@@ -16,15 +16,15 @@ public class elevator_move : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        timer += Time.deltaTime;
+        
 
-        if (timer>=0.3){
-            if (direction == 1){
-                transform.position += Vector3.right * speed * Time.deltaTime;
-            }
-            else if (direction == 0){
-                transform.position -= Vector3.right * speed * Time.deltaTime;
-            }
-        }    
+        if (direction == 1){
+            transform.position += Vector3.right * speed * Time.deltaTime;
+        }
+        else if (direction == 0){
+            transform.position -= Vector3.right * speed * Time.deltaTime;
+        }
+        
+        
     }
 }
