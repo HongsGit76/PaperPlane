@@ -251,10 +251,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d2c163df7bd493c42bf3b2a7a1068c25, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  JUMP_AMOUNT: 6
-  AIR: 3
+  JUMP_AMOUNT: 4
+  AIR: 1
   planeforjump: {fileID: 126757880}
   jumpingsound: {fileID: 8300000, guid: 4d96ec6f65ee3a94d99c3ab173ceda32, type: 3}
+  elevator: {fileID: 2082857507}
 --- !u!114 &126757879
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -850,7 +851,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bar: {fileID: 1330254960}
   mini_plane: {fileID: 1826977638}
-  time: 60
+  time: 20
 --- !u!20 &519420031
 Camera:
   m_ObjectHideFlags: 0
@@ -3008,7 +3009,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4dfc460c51679fe4fb6612e1b5351232, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  maxTime: 3
+  maxTime: 2
   object_1: {fileID: 1619089557140532477, guid: 7902e1cd06decd04d88d2e1f82fa9e0f,
     type: 3}
   object_2: {fileID: 911009960135960895, guid: 483cf5379fd1ff743b20c9762426656a, type: 3}
@@ -3289,6 +3290,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b305cde2bfa458a42aaa8eb48b739227, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  speed: 1
   grounds:
   - {fileID: 1991279521}
   - {fileID: 1205343957}
@@ -3303,7 +3305,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2082857509}
   - component: {fileID: 2082857508}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: 1F_elevator
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3369,7 +3371,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2082857507}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 14.48, y: 0.026, z: 0}
+  m_LocalPosition: {x: 14.47, y: 0, z: 15}
   m_LocalScale: {x: 1, y: 0.94435203, z: 1}
   m_Children: []
   m_Father: {fileID: 0}

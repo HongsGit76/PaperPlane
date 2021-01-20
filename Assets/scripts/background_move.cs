@@ -8,6 +8,7 @@ public class background_move : MonoBehaviour
     float _distance = 18.3f;
     int _count = 2;
     int _index = 2;
+    public int speed = 1;
 
     public GameObject[] grounds;
     // Start is called before the first frame update
@@ -21,7 +22,7 @@ public class background_move : MonoBehaviour
     {
         if (Time.timeScale == 0)
             return;
-        gameObject.transform.localPosition += new Vector3(-0.05f, 0, 0);
+        gameObject.transform.localPosition += new Vector3(-0.05f, 0, 0) * speed;
 
         _count = 2 + (int)(-gameObject.transform.localPosition.x / 18.3f);
 

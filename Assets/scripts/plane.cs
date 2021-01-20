@@ -14,6 +14,10 @@ public class plane : MonoBehaviour
     SpriteRenderer spriteRenderer;
     private Rigidbody2D planeRigidbody2D;
     private float timer = 0;
+    private int currentScene = 0;
+    private int levelTime = 0;
+
+    public GameObject elevator;
 
     private void Start()
     {
@@ -30,7 +34,15 @@ public class plane : MonoBehaviour
     void Update()
     {
         timer += Time.deltaTime;
-        if(timer<63)
+        currentScene = SceneManager.GetActiveScene().buildIndex;
+        if(currentScene == 2)
+            levelTime = 20;
+        else if(currentScene == 3)
+            levelTime = 50;
+        else
+            levelTime = 60;
+
+        if(timer<levelTime)
         {
             if(Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0))
             {
@@ -107,8 +119,25 @@ public class plane : MonoBehaviour
             }
         }
         else
-        {
-            SceneManager.LoadScene("level clear");
+        {   
+            Destroy(planeRigidbody2D);
+            elevator.transform.position = Vector3.MoveTowards(elevator.transform.position, new Vector3(8.55f,0,15), 5 * Time.deltaTime);
+            transform.position = Vector3.MoveTowards(transform.position, new Vector3(7.5f,-1,0), 8 * Time.deltaTime);
+            if (transform.position == new Vector3(7.5f,-1,0))
+                SceneManager.LoadScene("level clear");
+                
+                switch(currentScene){
+                    case 2:
+                        Debug.Log(currentScene);
+                        PlayerPrefs.SetInt("LevelPassed",1);
+                        break;
+                    case 3:
+                        PlayerPrefs.SetInt("LevelPassed",2);
+                        break;
+                    case 4:
+                        PlayerPrefs.SetInt("LevelPassed",3);
+                        break;
+                }
         }
     }
 

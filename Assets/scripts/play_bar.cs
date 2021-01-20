@@ -29,6 +29,6 @@ public class play_bar : MonoBehaviour
 
     public void MovePlane()
     {
-        LeanTween.moveX(mini_plane, 7, time);
+        LeanTween.moveX(mini_plane, 9f, time);
     }
 }

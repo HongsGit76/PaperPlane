@@ -16,7 +16,7 @@ EditorBuildSettings:
     guid: cb981eec69aec8f43989488370f9c70a
   - enabled: 1
     path: Assets/Scenes/LEVEL 2.unity
-    guid: eaf3c2b6d71ac8146972e98f93b2a42f
+    guid: ceb0db3525602ee4cabcc3393a2abcd9
   - enabled: 1
     path: Assets/Scenes/LEVEL 3.unity
     guid: 2cda990e2423bbf4892e6590ba056729
@@ -29,4 +29,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/level clear.unity
     guid: f45834f8c9a09ff4995e98cc6ff9a95e
+  - enabled: 1
+    path: Assets/Scenes/Diary.unity
+    guid: 73c6d729251e4e942a9ef9912851b226
   m_configObjects: {}
