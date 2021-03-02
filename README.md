@@ -35,19 +35,19 @@
 
 ## 게임 이미지
 
-* 메인화면
+* **메인화면**
 
   ![메인](./images/main.png)
 
-* 스토리
+* **스토리**
 
   ![스토리](./images/diary.png)
 
-* 인게임
+* **인게임**
 
   ![인게임](./images/ingame.png)
 
-* 부장님
+* **부장님**
 
   ![부장](./images/boojang.png)
 
