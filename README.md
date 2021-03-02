@@ -37,19 +37,19 @@
 
 메인화면
 
-[메인](./images/main.png)
+![메인](./images/main.png)
 
 스토리
 
-[스토리]()
+![스토리]()
 
 인게임
 
-[인게임](./images/ingame.png)
+![인게임](./images/ingame.png)
 
 부장님
 
-[부장](boojang.png)
+![부장](boojang.png)
 
 ## 게임 다운로드
 
