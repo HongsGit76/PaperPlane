@@ -7,7 +7,8 @@ public class play_bar : MonoBehaviour
 {
     public GameObject bar;
     public GameObject mini_plane;
-    public int time;
+    public GameObject posX;
+    public float time;
 
     // Start is called before the first frame update
     void Start()
@@ -29,6 +30,6 @@ public class play_bar : MonoBehaviour
 
     public void MovePlane()
     {
-        LeanTween.moveX(mini_plane, 7.5f, time);
+        LeanTween.moveX(mini_plane,posX.transform.position.x, time);
     }
 }
