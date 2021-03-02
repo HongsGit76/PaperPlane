@@ -49,7 +49,7 @@
 
 * **부장님**
 
-  ![부장](./images/boojang.png)
+  ![부장](./images/boojang.png width="800" height="350")
 
 ## 게임 다운로드
 
