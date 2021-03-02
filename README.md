@@ -48,8 +48,7 @@
   ![인게임](./images/ingame.png)
 
 * **부장님**
-  <img src="./images/boojang.png"  width="800" height="350">
-  ![부장](./images/boojang.png, width="800", height="350")
+  <img src="./images/boojang.png"  width="50%" height="50%">
 
 ## 게임 다운로드
 
