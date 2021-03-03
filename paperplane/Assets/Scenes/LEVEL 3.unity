@@ -3230,6 +3230,8 @@ MonoBehaviour:
   object_3: {fileID: 1526561483464032417, guid: d30cc674eff54ac4785258a3e0700205,
     type: 3}
   object_4: {fileID: 47631853950677991, guid: bf7ade3279f1f0a4f94d5b0f26976c6a, type: 3}
+  object_6: {fileID: 1526561483464032417, guid: d30cc674eff54ac4785258a3e0700205,
+    type: 3}
   object_5: {fileID: 7252045596300992979, guid: ac27cb2399a70104db10d69ee887fd54,
     type: 3}
   height_1: -3.33
@@ -3237,6 +3239,7 @@ MonoBehaviour:
   height_3: 3.02
   height_4: -3.26
   height_5: 2.64
+  height_6: 3.02
   boss: 2
   speed: 14
 --- !u!4 &1842350617

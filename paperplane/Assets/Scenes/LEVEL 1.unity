@@ -3230,6 +3230,8 @@ MonoBehaviour:
     type: 3}
   object_4: {fileID: 5630689245340976673, guid: b6406903db146194a8ec4d5fdeccdab7,
     type: 3}
+  object_6: {fileID: 5630689245340976673, guid: b6406903db146194a8ec4d5fdeccdab7,
+    type: 3}
   object_5: {fileID: 2659131449177614019, guid: 255a82403eeb0df4ab73ff2c5f1d8281,
     type: 3}
   height_1: -2.58
@@ -3237,6 +3239,7 @@ MonoBehaviour:
   height_3: 2.64
   height_4: 2.86
   height_5: 2.64
+  height_6: 2.86
   boss: 2
   speed: 0
 --- !u!4 &1842350617

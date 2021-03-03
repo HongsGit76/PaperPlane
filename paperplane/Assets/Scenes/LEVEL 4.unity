@@ -3230,12 +3230,15 @@ MonoBehaviour:
   object_3: {fileID: 1995959808187628020, guid: f2a793043b6042344adc3b42cd503923,
     type: 3}
   object_4: {fileID: 358786976295165681, guid: fa7fe0fdccebccd46b0d14bc0d227af6, type: 3}
+  object_6: {fileID: 1995959808187628020, guid: f2a793043b6042344adc3b42cd503923,
+    type: 3}
   object_5: {fileID: 925259205793248299, guid: c8bee122666d1504d9889152524ac2bf, type: 3}
   height_1: -2.77
   height_2: -2.66
   height_3: 3.01
   height_4: -2.43
   height_5: -3.38
+  height_6: 3.01
   boss: 2
   speed: 10
 --- !u!4 &1842350617

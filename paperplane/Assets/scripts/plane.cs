@@ -16,12 +16,16 @@ public class plane : MonoBehaviour
     private float timer = 0;
     private int currentScene = 0;
     private int levelTime = 0;
+    public float endTime = 0;
+
+    private bool setEnd = false;
 
     public GameObject elevator;
 
     private void Start()
     {
         Time.timeScale = 0;
+
     }
 
     public void Awake()
@@ -33,6 +37,7 @@ public class plane : MonoBehaviour
 
     void Update()
     {
+        Debug.Log("endTIme : " + endTime+ " setEnd: " + setEnd);
         timer += Time.deltaTime;
         currentScene = SceneManager.GetActiveScene().buildIndex;
         if(currentScene == 2)
@@ -133,7 +138,7 @@ public class plane : MonoBehaviour
                     elevator.transform.position = Vector3.MoveTowards(elevator.transform.position, new Vector3(8.55f,0,15), 5 * Time.deltaTime);
                     break;
                 case 5:
-                    elevator.transform.position = Vector3.MoveTowards(elevator.transform.position, new Vector3(5.38f,-2.6f,15), 5 * Time.deltaTime);
+                    elevator.transform.position = Vector3.MoveTowards(elevator.transform.position, new Vector3(5.38f,-2.6f,15), 8 * Time.deltaTime);
                     break;
             }
             switch(currentScene){
@@ -147,10 +152,16 @@ public class plane : MonoBehaviour
                     transform.position = Vector3.MoveTowards(transform.position, new Vector3(7.5f,-1,0), 8 * Time.deltaTime);
                     break;
                 case 5:
-                    transform.position = Vector3.MoveTowards(transform.position, new Vector3(1.95f,0,0), 2 * Time.deltaTime);
-                    SceneManager.LoadScene("level clear");
+                    transform.position = Vector3.MoveTowards(transform.position, new Vector3(1.95f,0,0), 8 * Time.deltaTime);
+                     
+                    
+                    if (setEnd){
+                        SceneManager.LoadScene("level clear");
+                    }
                     break;
             }
+             
+            
             if (transform.position == new Vector3(7.5f,-1,0))
                 SceneManager.LoadScene("level clear");
                 
@@ -167,6 +178,16 @@ public class plane : MonoBehaviour
                         break;
                 }
         }
+        endTime += Time.deltaTime;
+        
+        if(endTime > 61){
+            setEnd = true;
+            if (setEnd){
+                SceneManager.LoadScene("level clear");
+            }
+            
+        } 
+          
     }
 
     public void Jump()

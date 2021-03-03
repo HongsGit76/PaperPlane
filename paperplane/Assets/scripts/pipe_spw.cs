@@ -11,12 +11,14 @@ public class pipe_spw : MonoBehaviour
     public GameObject object_2;
     public GameObject object_3;
     public GameObject object_4;
+    public GameObject object_6;
     public GameObject object_5;
     public float height_1;
     public float height_2;
     public float height_3;
     public float height_4;
     public float height_5;
+    public float height_6;
     private int rannum;
     private int passing = 0;
     public int boss = 50;
@@ -74,6 +76,15 @@ public class pipe_spw : MonoBehaviour
                 newob_5.transform.position = transform.position + new Vector3(0, height_5, 0);
                 Destroy(newob_5, 15);
                 move mv = newob_5.transform.GetComponent<move>();
+                mv.speed += speed;
+                timer = 0;
+            }
+            else if (rannum == 6)
+            {
+                GameObject newob_6 = Instantiate(object_6);
+                newob_6.transform.position = transform.position + new Vector3(0, height_6, 0);
+                Destroy(newob_6, 15);
+                move mv = newob_6.transform.GetComponent<move>();
                 mv.speed += speed;
                 timer = 0;
             }
