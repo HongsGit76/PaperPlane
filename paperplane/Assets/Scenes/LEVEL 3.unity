@@ -255,6 +255,7 @@ MonoBehaviour:
   AIR: 1
   planeforjump: {fileID: 126757880}
   jumpingsound: {fileID: 8300000, guid: 4d96ec6f65ee3a94d99c3ab173ceda32, type: 3}
+  endTime: 0
   elevator: {fileID: 2082857507}
 --- !u!114 &126757879
 MonoBehaviour:
@@ -3227,7 +3228,7 @@ MonoBehaviour:
     type: 3}
   object_2: {fileID: 4504616286171593101, guid: 17f830ae1cbb8444fa4bf64ef0010765,
     type: 3}
-  object_3: {fileID: 1526561483464032417, guid: d30cc674eff54ac4785258a3e0700205,
+  object_3: {fileID: 8674783889852695305, guid: e174983497ae1b540b87ac377fc92e9d,
     type: 3}
   object_4: {fileID: 47631853950677991, guid: bf7ade3279f1f0a4f94d5b0f26976c6a, type: 3}
   object_6: {fileID: 1526561483464032417, guid: d30cc674eff54ac4785258a3e0700205,
@@ -3236,7 +3237,7 @@ MonoBehaviour:
     type: 3}
   height_1: -3.33
   height_2: -2.65
-  height_3: 3.02
+  height_3: 2.82
   height_4: -3.26
   height_5: 2.64
   height_6: 3.02

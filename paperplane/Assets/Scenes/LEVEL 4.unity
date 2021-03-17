@@ -255,6 +255,7 @@ MonoBehaviour:
   AIR: 0.5
   planeforjump: {fileID: 126757880}
   jumpingsound: {fileID: 8300000, guid: 4d96ec6f65ee3a94d99c3ab173ceda32, type: 3}
+  endTime: 0
   elevator: {fileID: 2082857507}
 --- !u!114 &126757879
 MonoBehaviour:
@@ -3236,7 +3237,7 @@ MonoBehaviour:
   height_1: -2.77
   height_2: -2.66
   height_3: 3.01
-  height_4: -2.43
+  height_4: 2.76
   height_5: -3.38
   height_6: 3.01
   boss: 2
